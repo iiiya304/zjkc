@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4A90E2',
+                        secondary: '#6B7280'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '2px',
+                        DEFAULT: '4px',
+                        'md': '8px',
+                        'lg': '12px',
+                        'xl': '16px',
+                        '2xl': '20px',
+                        '3xl': '24px',
+                        'full': '9999px',
+                        'button': '4px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="css/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/css/style.css" rel="stylesheet" type="text/css" media="all">
+     <script src="js/js/jquery.easing.min.js"></script>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        /* 基础样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+/* 模块样式 */
+.module {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 1rem;
+    width: calc(33.333% - 2rem); /* 每个模块占1/3宽度，减去边距 */
+    text-align: center;
+}
+
+.module h2 {
+    margin-top: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .module {
+        width: calc(50% - 2rem); /* 在小屏幕上，每行显示两个模块 */
+    }
+}
+
+@media (max-width: 480px) {
+    .module {
+        width: 100%; /* 在更小屏幕上，每个模块占满一行 */
+    }
+}
+    </style>
+</head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/images/logologo.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="shouye.html">首页</a></li>
+                    <!-- <li><a href="function1.html">1</a></li>
+                    <li><a href="function2.html">2</a></li>
+                    <li><a href="function3.html">3</a></li> -->
+                    <li><a href="introduction.html">关于我们</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="max-w-[1440px] mx-auto py-20 px-8">
+                
+                <div class="grid grid-cols-3 gap-8">
+                    <!-- 公司文化 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="mb-6 w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-landmark text-primary text-2xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-4 text-center">公司文化</h2>
+                        <div class="text-gray-600 leading-relaxed">
+                            <p class="mb-4">智价侃成志于农村电商领域，隶属于湖州智领农商科技有限公司，业务涉及农产定价咨询、电商策略服务等范畴，专注为农户解定价之惑，于商磋之中寻最优策略，力促农品盛销，惠泽乡村。
+                                智价侃成公司承中华财商文化之脉，秉承着“商道酬信，惠农致远”的观念，效法陶朱公之智算定优价，子贡之善辩促商兴，体现了“扶危济困”“合作共赢”的传统价值观，与此同时我们的平台能够援农村商家出困，筑农商和谐盛象，书财智交融新章。
+                                在这个科技快速发展的时代中，我们的智价侃成公司应需而生，志在传承农商业道，复兴乡村经济，冀成农村电商领域之翘楚，展中华传统商韵之新辉，为乡村振兴与文化赓续献力。</p>
+                        </div>
+                    </div>
+        
+                    <!-- 公司愿景 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="mb-6 w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-eye text-primary text-2xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold mb-4 text-center">公司愿景</h1>
+                        <div class="text-gray-600 leading-relaxed">
+                            <p class="mb-4">我们致力于成为农村电商领域的智能定价引领者，通过科学创新，突破农村电商在定价环节的困境，提升其利润空间与市场竞争力。</p>
+                            <p>以精准智能的定价策略与场景模拟训练，赋能广大农村电商从业者掌握价格谈判技巧，推动农村电商产业蓬勃发展，打造一个透明、公平的新业态。</p>
+                        </div>
+                    </div>
+        
+                    <!-- 公司宗旨 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 group">
+                        <div class="mb-6 w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                            <i class="fas fa-bullseye text-primary text-2xl"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4 text-center">公司宗旨</h4>
+                        <div class="text-gray-600 leading-relaxed">
+                            <p class="mb-4">利用 AI 技术赋能农村电商，优化定价策略，智能辅助砍价，助力电商实现收益增长，推动农村商业繁荣。</p>
+                            <p>我们提供高效、易用的智能平台，不仅为电商从业者提供科学的定价建议与智能砍价辅助，还通过模拟训练场景，提升他们的商业谈判能力与市场适应能力。</p>
+                        </div>
+                    </div>
+                </div>
+        </main>
+    
+        <footer>
+            <!-- <div id="contact" class="contact section s4">
+                 <div class="container">
+                     <h4>联系我们</h4>
+                      <div class="row contact-form">
+                            <form>
+                                <div class="col-md-6 text-box">
+                                    <input type="text" placeholder="Name"value=姓名>
+                                    <input type="text" placeholder="Email"value=邮件>
+                                    <input type="text" placeholder="Subject"value=标题>
+                                </div>
+                                 <div class="col-md-6 textarea">
+                                        <textarea>建议</textarea>
+                                  </div>
+                                  <div class="clearfix"> </div><br>
+                                  <input class="btn-red-lg" type="submit" value="提交建议">
+                          </form>
+                      </div>
+
+                       -->
+                       <div class="footer">
+                        <div>
+                            <h3>关于智价砍成</h3>
+                            <p>商道酬信</p>
+                            <p>惠农致远</p>
+                        </div>
+                        <div>
+                            <h3>联系我们</h3>
+                            <p>电话：0571-12345678</p>
+                            <p>邮箱：info@zjkc.company.com</p>
+                            
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+        
+                    <div class="copyright">
+                        Copyright &copy; zjkc.com 版权所有
+                    </div>
+        </footer>
+        <link rel="stylesheet" href="footer.css">
+    </body>
+</body>
+</html>

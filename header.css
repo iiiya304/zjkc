@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #7c9954;
+    font-size: 20px; /* 调整全局字体大小 */
+}
+
+header {
+    background-color: #7c9954;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block; /* 使logo作为一个内联块级元素显示 */
+    margin-right: 20px; /* 根据需要调整与导航栏的距离 */
+}
+
+.logo img {
+    height: 100px; /* 根据需要调整logo图片的高度 */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px; /* 菜单栏文字的间距 */
+}
+
+nav a {
+    text-decoration: none; /* 下划线 */
+    color: #ffffff;
+}

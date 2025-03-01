@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智价侃成 - 智能砍价助手</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{colors:{primary:'#568441'},borderRadius:{'none':'0px','sm':'2px',DEFAULT:'4px','md':'8px','lg':'12px','xl':'16px','2xl':'20px','3xl':'24px','full':'9999px','button':'4px'}}}}</script>
+<style>
+body {
+min-height: 1024px;
+}
+.chat-message {
+max-width: 80%;
+}
+.chat-input:focus {
+outline: none;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<div class="max-w-[1440px] mx-auto">
+<nav class="bg-white shadow-sm px-8 py-4 flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<a href="shouye.html" class="text-2xl text-primary">🔙</a>
+<div class="flex space-x-6 ml-8">
+<a href="function1.html" class="text-gray-600 hover:text-primary">慧砍</a>
+<a href="function2.html" class="text-primary font-medium">似砍</a>
+<a href="function3.html" class="text-gray-600 hover:text-primary">拟定</a>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+</div>
+</nav>
+<div class="flex h-[calc(100vh-72px)]">
+<div class="flex-1 flex flex-col">
+<div class="p-4 bg-white border-b border-gray-200"></div>
+<div class="flex-1 p-4 overflow-y-auto space-y-4">
+<div class="flex items-start space-x-3">
+<div class="w-8 h-8 bg-primary !rounded-button flex items-center justify-center">
+<i class="fas fa-robot text-white text-sm"></i>
+</div>
+<div class="chat-message bg-white p-4 !rounded-button shadow-sm">
+<p>您好！我是智能砍价助手。请告诉我您想砍价的农产品信息，我会为您提供最优的砍价方案。</p>
+</div>
+</div>
+<div class="flex items-start justify-end space-x-3">
+<div class="chat-message bg-primary text-white p-4 !rounded-button">
+<p>我想买 5kg 阳山水蜜桃，目前售价 298 元，能帮我分析一下合适的砍价策略吗？</p>
+</div>
+<div class="w-8 h-8 bg-gray-200 !rounded-button flex items-center justify-center">
+<i class="fas fa-user text-gray-500 text-sm"></i>
+</div>
+</div>
+<div class="flex items-start space-x-3">
+<div class="w-8 h-8 bg-primary !rounded-button flex items-center justify-center">
+<i class="fas fa-robot text-white text-sm"></i>
+</div>
+<div class="chat-message bg-white p-4 !rounded-button shadow-sm space-y-3">
+<p>根据农产品市场数据分析，5kg 阳山水蜜桃的价格区间在 238-298 元之间。以下是我的建议：</p>
+<ul class="list-disc pl-4 space-y-2">
+<li>目前正值水蜜桃丰收季，价格有下调空间</li>
+<li>建议以 268 元为初始议价点</li>
+<li>可以询问水果的品质等级和新鲜程度</li>
+<li>建议询问批发价格或团购优惠</li>
+</ul>
+<p>需要我为您模拟一下具体的砍价过程吗？</p>
+</div>
+</div>
+</div>
+<div class="p-4 bg-white border-t border-gray-200">
+<div class="flex items-center space-x-3">
+<button class="p-3 text-gray-600 hover:text-primary hover:bg-gray-100 !rounded-button">
+<i class="fas fa-plus"></i>
+</button>
+<input type="text" class="flex-1 px-4 py-2 bg-gray-100 !rounded-button chat-input" placeholder="输入您的问题...">
+<button class="p-3 text-gray-600 hover:text-primary hover:bg-gray-100 !rounded-button">
+<i class="fas fa-microphone"></i>
+</button>
+<button class="px-6 py-2 bg-primary text-white hover:bg-primary/90 !rounded-button whitespace-nowrap">
+发送
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

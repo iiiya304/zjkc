@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/jquery.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">    
+    <script src="js/jquery.chocolat.js"></script>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+
+        /* 模块样式 */
+        .module {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin: 1rem;
+            width: calc(33.333% - 2rem); /* 每个模块占1/3宽度，减去边距 */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .module h2 {
+            margin-top: 0;
+        }
+
+        .module img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .module {
+                width: calc(50% - 2rem); /* 在小屏幕上，每行显示两个模块 */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .module {
+                width: 100%; /* 在更小屏幕上，每个模块占满一行 */
+            }
+        }
+
+        .banner-image {
+    width: 100%; /* 设置宽度为父容器的100% */
+    height: auto; /* 保持图片比例 */
+    object-fit: cover; /* 如果需要裁剪图片以适应容器 */
+    border-radius: 8px; /* 添加圆角效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+}
+    </style>
+</head>
+
+<body> 
+    <header>
+        <div class="logo">
+            <img src="/images/logologo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="introduction.html">关于我们</a></li>
+            </ul>
+        </nav>
+    </header>
+               
+
+    
+    <!--content-->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col_1">
+        <div class="box_1  row">
+            <img class="banner-image" src="images/banner.png" alt="Banner">
+            <div class="container">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="style_1">
+                        <div class="style_1-image">
+                            <span class="glyphicon glyphicon-leaf leaf" aria-hidden="true"></span>
+                        </div>
+                        <h3>慧砍（砍价小助手）</h3>
+                        <p>智价侃成可以根据您提供的各种信息，为您打造专属模型，为您提供智能砍价服务，您可以选择智价侃成，让其帮您进行砍价，为您的电商路保驾护航。</p>
+                        <a href="function1.html"><span class="glyphicon glyphicon-arrow-right arrow" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="style_1">
+                        <div class="style_1-image">
+                            <span class="glyphicon glyphicon-heart-empty leaf" aria-hidden="true"></span>
+                        </div>
+                        <h3>似砍（砍价模拟）</h3>
+                        <p>智价侃成可以根据您提供的各种信息，通过先进的AI算法分析您给定的数据，打造专属模型，通过智价侃成进行砍价模拟，模拟砍价的流程，解锁不同砍价结果，为您提供最优的砍价方案。</p>
+                        <a href="function2.html"><span class="glyphicon glyphicon-arrow-right arrow" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="style_1">
+                        <div class="style_1-image">
+                            <span class="glyphicon glyphicon-thumbs-up leaf" aria-hidden="true"></span>
+                        </div>
+                        <h3>拟定（定价助手）</h3>
+                        <p>您可以给智价侃成任何您所能想到的数据，我们会通过内置算法，利用大模型进行数据分析，结合您给定的场景进行定价服务，当您无法决定您商品的价格，当您对您在电商过程中对价格产生困惑，智价侃成将会是您最好的选择。</p>
+                        <a href="function3.html"><span class="glyphicon glyphicon-arrow-right arrow" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <div>
+                <h3>关于智价砍成</h3>
+                <p>商道酬信</p>
+                <p>惠农致远</p>
+            </div>
+            <div>
+                <h3>联系我们</h3>
+                <p>电话：0571-12345678</p>
+                <p>邮箱：info@zjkc.company.com</p>
+            </div>
+            <div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            Copyright &copy; zjkc.com 版权所有
+        </div>
+    </footer>
+</body>
+</html>

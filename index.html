@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* 防止水平滚动条出现 */
+        }
+        /*文字样式 */
+        .cover {
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative; /* 设置相对定位 */
+            overflow: hidden; /* 隐藏超出部分 */
+            cursor: pointer; /* 鼠标悬停时显示可点击样式 */
+        }
+
+        .text-container {
+            position: absolute; /* 设置绝对定位 */
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+            padding: 20px;
+            border-radius: 10px 10px 0 0; /* 圆角边框 */
+            width: 80%; /* 根据需要调整宽度 */
+            z-index: 10; /* 确保在背景图上方 */
+        }
+
+        .text-container h1 {
+            color: white; /* 文字颜色 */
+            text-align: center;
+            margin: 0; /* 去掉默认的外边距 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cover" onclick="showNextPage()">
+        <div class="text-container">
+            <h1>欢迎来到智价侃成</h1>
+        </div>
+    </div>
+    <script>
+        function showNextPage() {
+        window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
